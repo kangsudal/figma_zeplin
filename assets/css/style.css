@@ -28,6 +28,8 @@ body {
 
 .row {
     display: flex;
+    flex: 1; /*행 높이 같게*/
+    align-items: center; /*행 가운데 정렬*/
 }
 
 .Vector {
@@ -92,4 +94,10 @@ body {
     letter-spacing: normal;
     text-align: left;
     color: #bdbdbd;
+}
+
+.column{
+    /*행 같은 비율로*/
+    display: flex;
+    flex-direction: column;
 }
