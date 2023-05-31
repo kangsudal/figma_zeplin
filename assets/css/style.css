@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    padding-bottom: 100px;
 }
 
 .Rectangle-3 {
@@ -119,15 +120,15 @@ body {
 /***********list*************/
 .Frame-1 {
     width: 350px;
-    height: 600px;
+    /* height: 600px; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 11px;
-    margin: 27px 18px 273px 22px;
+    margin: 27px 18px 0px 22px;
     padding: 0;
-    /* border: solid 1px red; */
+    border: solid 1px red;
 }
 
 
@@ -147,11 +148,29 @@ body {
     color: #fff;
 }
 
-.stock_list_scroll {
+/* .stock_list_scroll {
     overflow: auto;
-}
+} */
 
 /*스크롤 모양 숨기기*/
 .stock_list_scroll::-webkit-scrollbar {
     display: none;
+}
+
+/*BottomNavigationBar*/
+#BottomNavigationBar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    height: 75px;
+    width: 350px;
+    padding: 1rem;
+    color: white;
+    background: teal;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

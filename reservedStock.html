@@ -10,57 +10,55 @@
 </head>
 
 <body>
-    <header>
-        <div class="Rectangle-3 column">
+    <div class="Rectangle-3 column">
+        <div class="row">
+            <span class="title">
+                찜한주식
+            </span>
             <div class="row">
-                <span class="title">
-                    찜한주식
-                </span>
-                <div class="row">
-                    <div class="Vector">
-                        <img src="assets/img/icon_plus.svg" alt="icon plus">
-                    </div>
-                    <div class="Vector">
-                        <img src="assets/img/icon_pencil.svg" alt="icon plus">
-                    </div>
+                <div class="Vector">
+                    <img src="assets/img/icon_plus.svg" alt="icon plus">
                 </div>
-            </div>
-
-            <div class="row buttonsPanel">
-                <div class="Rectangle-2">
-                    <span>
-                        최근조회
-                    </span>
-                </div>
-                <div class="Rectangle-2">
-                    <span>
-                        보유주식
-                    </span>
-                </div>
-                <div class="Rectangle-2">
-                    <span>
-                        관심그룹001
-                    </span>
-                </div>
-
-                <div class="Rectangle-2">
-                    <span>
-                        그룹추가
-                    </span>
-                </div>
-            </div>
-
-            <div class="row">
-                <span class="OrderButtonByCurrentPrice">
-                    현재가 ▼
-                </span>
-                <div class="row OrderButtonByRate">
-                    <span>등락률</span>
-                    <img src="assets/img/icon_elevator.svg" alt="icon plus" style="height:17px;">
+                <div class="Vector">
+                    <img src="assets/img/icon_pencil.svg" alt="icon plus">
                 </div>
             </div>
         </div>
-    </header>
+
+        <div class="row buttonsPanel">
+            <div class="Rectangle-2">
+                <span>
+                    최근조회
+                </span>
+            </div>
+            <div class="Rectangle-2">
+                <span>
+                    보유주식
+                </span>
+            </div>
+            <div class="Rectangle-2">
+                <span>
+                    관심그룹001
+                </span>
+            </div>
+
+            <div class="Rectangle-2">
+                <span>
+                    그룹추가
+                </span>
+            </div>
+        </div>
+
+        <div class="row">
+            <span class="OrderButtonByCurrentPrice">
+                현재가 ▼
+            </span>
+            <div class="row OrderButtonByRate">
+                <span>등락률</span>
+                <img src="assets/img/icon_elevator.svg" alt="icon plus" style="height:17px;">
+            </div>
+        </div>
+    </div>
     <div class="Frame-1 stock_list_scroll" id="Frame-1">
         <table width='100%' style="color: white;border-spacing: 8px;" id="tableId">
             <!-- <tr>
@@ -75,6 +73,29 @@
             </tr> -->
         </table>
     </div>
+    <div id="BottomNavigationBar">
+        <nav>
+            <img src="assets/img/icon_elevator.svg" style="height:17px;">
+            <div>홈</div>
+        </nav>
+        <nav>
+            <img src="assets/img/icon_elevator.svg" style="height:17px;">
+            <div>찜한주식</div>
+        </nav>
+        <nav>
+            <img src="assets/img/icon_elevator.svg" style="height:17px;">
+            <div>내자산</div>
+        </nav>
+        <nav>
+            <img src="assets/img/icon_elevator.svg" style="height:17px;">
+            <div>검색</div>
+        </nav>
+        <nav>
+            <img src="assets/img/icon_elevator.svg" style="height:17px;">
+            <div>더보기</div>
+        </nav>
+    </div>
+    </div>
 </body>
 <script>
     let data = [
@@ -84,7 +105,7 @@
             'absolutePrice': 70300,
             'changePrice': 1500,
             'changeRate': 2.18,
-            'isPositive':1,
+            'isPositive': 1,
             'isKorean': true,
         },
         {
@@ -93,7 +114,7 @@
             'absolutePrice': 38.24,
             'changePrice': 0,
             'changeRate': 0,
-            'isPositive':0,
+            'isPositive': 0,
             'isKorean': false,
         },
         {
@@ -102,7 +123,7 @@
             'absolutePrice': 136.10,
             'changePrice': 0.43,
             'changeRate': 0.32,
-            'isPositive':1,
+            'isPositive': 1,
             'isKorean': false,
         },
         {
@@ -111,7 +132,7 @@
             'absolutePrice': 577000,
             'changePrice': 6000,
             'changeRate': 1.03,
-            'isPositive':-1,
+            'isPositive': -1,
             'isKorean': true,
         },
         {
@@ -120,7 +141,7 @@
             'absolutePrice': 70300,
             'changePrice': 1500,
             'changeRate': 2.18,
-            'isPositive':1,
+            'isPositive': 1,
             'isKorean': true,
         },
         {
@@ -129,7 +150,7 @@
             'absolutePrice': 38.24,
             'changePrice': 0,
             'changeRate': 0,
-            'isPositive':0,
+            'isPositive': 0,
             'isKorean': false,
         },
         {
@@ -138,7 +159,7 @@
             'absolutePrice': 136.10,
             'changePrice': 0.43,
             'changeRate': 0.32,
-            'isPositive':1,
+            'isPositive': 1,
             'isKorean': false,
         },
         {
@@ -147,7 +168,7 @@
             'absolutePrice': 577000,
             'changePrice': 6000,
             'changeRate': 1.03,
-            'isPositive':-1,
+            'isPositive': -1,
             'isKorean': true,
         },
         {
@@ -156,7 +177,7 @@
             'absolutePrice': 70300,
             'changePrice': 1500,
             'changeRate': 2.18,
-            'isPositive':1,
+            'isPositive': 1,
             'isKorean': true,
         },
         {
@@ -165,7 +186,7 @@
             'absolutePrice': 38.24,
             'changePrice': 0,
             'changeRate': 0,
-            'isPositive':0,
+            'isPositive': 0,
             'isKorean': false,
         },
         {
@@ -174,7 +195,7 @@
             'absolutePrice': 136.10,
             'changePrice': 0.43,
             'changeRate': 0.32,
-            'isPositive':1,
+            'isPositive': 1,
             'isKorean': false,
         },
         {
@@ -183,7 +204,7 @@
             'absolutePrice': 577000,
             'changePrice': 6000,
             'changeRate': 1.03,
-            'isPositive':-1,
+            'isPositive': -1,
             'isKorean': true,
         },
         {
@@ -192,7 +213,7 @@
             'absolutePrice': 577000,
             'changePrice': 6000,
             'changeRate': 1.03,
-            'isPositive':-1,
+            'isPositive': -1,
             'isKorean': true,
         },
         {
@@ -201,7 +222,7 @@
             'absolutePrice': 577000,
             'changePrice': 6000,
             'changeRate': 1.03,
-            'isPositive':-1,
+            'isPositive': -1,
             'isKorean': true,
         },
         {
@@ -210,7 +231,7 @@
             'absolutePrice': 577000,
             'changePrice': 6000,
             'changeRate': 1.03,
-            'isPositive':-1,
+            'isPositive': -1,
             'isKorean': true,
         },
         {
@@ -219,7 +240,7 @@
             'absolutePrice': 577000,
             'changePrice': 6000,
             'changeRate': 1.03,
-            'isPositive':-1,
+            'isPositive': -1,
             'isKorean': true,
         },
         {
@@ -228,7 +249,7 @@
             'absolutePrice': 577000,
             'changePrice': 6000,
             'changeRate': 1.03,
-            'isPositive':-1,
+            'isPositive': -1,
             'isKorean': true,
         },
     ];
@@ -242,12 +263,12 @@
         let changePrice = item['changePrice'];
         let changeRate = item['changeRate'];
         let isPositive = item['isPositive'];
-        let color='white';
-        if(isPositive>0){
+        let color = 'white';
+        if (isPositive > 0) {
             color = 'red';
-        }else if(isPositive<0){
+        } else if (isPositive < 0) {
             color = 'rgb(50,0,255)';
-        }else{
+        } else {
             color = 'white';
         }
         frame.insertAdjacentHTML(
@@ -255,12 +276,12 @@
             `
             <tr>
                 <td width='15%' align="center">
-                    <img src="`+thumb+`" alt="logo" style="width:40px; height: 40px;">
+                    <img src="`+ thumb + `" alt="logo" style="width:40px; height: 40px;">
                 </td>
-                <td width='45%' style = 'font-weight: bold;'>`+name+`</td>
+                <td width='45%' style = 'font-weight: bold;'>`+ name + `</td>
                 <td width='40%' align="right">
-                    <div style="font-weight: bold;">`+absolutePrice+`</div>
-                    <div style="font-size:12px; color: `+color+`;">`+changePrice+`(`+changeRate+`%)</div>
+                    <div style="font-weight: bold;">`+ absolutePrice + `</div>
+                    <div style="font-size:12px; color: `+ color + `;">` + changePrice + `(` + changeRate + `%)</div>
                 </td>
             </tr>
             `
