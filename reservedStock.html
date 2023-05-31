@@ -61,16 +61,212 @@
             </div>
         </div>
     </header>
-    <div class="Frame-1">
-        <div class="list">
-            <div class="CircleAvatar"></div>
-            <span>삼성전자</span>
-            <div class="priceColumn">
-                <div><span class="absolutePrice">xx,xxx원</span></div>
-                <div><span class="priceRate">▲ x,xxx원(x.xx%)</span></div>
-            </div>
-        </div>
+    <div class="Frame-1 stock_list_scroll" id="Frame-1">
+        <table width='100%' style="color: white;border-spacing: 8px;" id="tableId">
+            <!-- <tr>
+                <td width='15%' align="center">
+                    <img src="assets/img/icon_plus.svg" alt="logo">
+                </td>
+                <td width='45%' style = 'font-weight: bold;'>이름</td>
+                <td width='40%' align="right">
+                    <div style="font-weight: bold;">현재가격</div>
+                    <div style="font-size:12px; color: red;">변동가격(변동률%)</div>
+                </td>
+            </tr> -->
+        </table>
     </div>
 </body>
+<script>
+    let data = [
+        {
+            'thumb': 'assets/img/samaung.png',
+            'name': '삼성전자',
+            'absolutePrice': 70300,
+            'changePrice': 1500,
+            'changeRate': 2.18,
+            'isPositive':1,
+            'isKorean': true,
+        },
+        {
+            'thumb': 'assets/img/hormel.png',
+            'name': '호멜 푸즈',
+            'absolutePrice': 38.24,
+            'changePrice': 0,
+            'changeRate': 0,
+            'isPositive':0,
+            'isKorean': false,
+        },
+        {
+            'thumb': 'assets/img/JPM.png',
+            'name': '제이피모간 체이스',
+            'absolutePrice': 136.10,
+            'changePrice': 0.43,
+            'changeRate': 0.32,
+            'isPositive':1,
+            'isKorean': false,
+        },
+        {
+            'thumb': 'assets/img/LG.png',
+            'name': 'LG에너지솔루션',
+            'absolutePrice': 577000,
+            'changePrice': 6000,
+            'changeRate': 1.03,
+            'isPositive':-1,
+            'isKorean': true,
+        },
+        {
+            'thumb': 'assets/img/samaung.png',
+            'name': '삼성전자',
+            'absolutePrice': 70300,
+            'changePrice': 1500,
+            'changeRate': 2.18,
+            'isPositive':1,
+            'isKorean': true,
+        },
+        {
+            'thumb': 'assets/img/hormel.png',
+            'name': '호멜 푸즈',
+            'absolutePrice': 38.24,
+            'changePrice': 0,
+            'changeRate': 0,
+            'isPositive':0,
+            'isKorean': false,
+        },
+        {
+            'thumb': 'assets/img/JPM.png',
+            'name': '제이피모간 체이스',
+            'absolutePrice': 136.10,
+            'changePrice': 0.43,
+            'changeRate': 0.32,
+            'isPositive':1,
+            'isKorean': false,
+        },
+        {
+            'thumb': 'assets/img/LG.png',
+            'name': 'LG에너지솔루션',
+            'absolutePrice': 577000,
+            'changePrice': 6000,
+            'changeRate': 1.03,
+            'isPositive':-1,
+            'isKorean': true,
+        },
+        {
+            'thumb': 'assets/img/samaung.png',
+            'name': '삼성전자',
+            'absolutePrice': 70300,
+            'changePrice': 1500,
+            'changeRate': 2.18,
+            'isPositive':1,
+            'isKorean': true,
+        },
+        {
+            'thumb': 'assets/img/hormel.png',
+            'name': '호멜 푸즈',
+            'absolutePrice': 38.24,
+            'changePrice': 0,
+            'changeRate': 0,
+            'isPositive':0,
+            'isKorean': false,
+        },
+        {
+            'thumb': 'assets/img/JPM.png',
+            'name': '제이피모간 체이스',
+            'absolutePrice': 136.10,
+            'changePrice': 0.43,
+            'changeRate': 0.32,
+            'isPositive':1,
+            'isKorean': false,
+        },
+        {
+            'thumb': 'assets/img/LG.png',
+            'name': 'LG에너지솔루션',
+            'absolutePrice': 577000,
+            'changePrice': 6000,
+            'changeRate': 1.03,
+            'isPositive':-1,
+            'isKorean': true,
+        },
+        {
+            'thumb': 'assets/img/LG.png',
+            'name': 'LG에너지솔루션',
+            'absolutePrice': 577000,
+            'changePrice': 6000,
+            'changeRate': 1.03,
+            'isPositive':-1,
+            'isKorean': true,
+        },
+        {
+            'thumb': 'assets/img/LG.png',
+            'name': 'LG에너지솔루션',
+            'absolutePrice': 577000,
+            'changePrice': 6000,
+            'changeRate': 1.03,
+            'isPositive':-1,
+            'isKorean': true,
+        },
+        {
+            'thumb': 'assets/img/LG.png',
+            'name': 'LG에너지솔루션',
+            'absolutePrice': 577000,
+            'changePrice': 6000,
+            'changeRate': 1.03,
+            'isPositive':-1,
+            'isKorean': true,
+        },
+        {
+            'thumb': 'assets/img/LG.png',
+            'name': 'LG에너지솔루션',
+            'absolutePrice': 577000,
+            'changePrice': 6000,
+            'changeRate': 1.03,
+            'isPositive':-1,
+            'isKorean': true,
+        },
+        {
+            'thumb': 'assets/img/LG.png',
+            'name': 'LG에너지솔루션',
+            'absolutePrice': 577000,
+            'changePrice': 6000,
+            'changeRate': 1.03,
+            'isPositive':-1,
+            'isKorean': true,
+        },
+    ];
+
+    let frame = document.getElementById('tableId');
+
+    data.forEach((item) => {
+        let thumb = item['thumb'];
+        let name = item['name'];
+        let absolutePrice = item['absolutePrice'];
+        let changePrice = item['changePrice'];
+        let changeRate = item['changeRate'];
+        let isPositive = item['isPositive'];
+        let color='white';
+        if(isPositive>0){
+            color = 'red';
+        }else if(isPositive<0){
+            color = 'rgb(50,0,255)';
+        }else{
+            color = 'white';
+        }
+        frame.insertAdjacentHTML(
+            'beforeend',
+            `
+            <tr>
+                <td width='15%' align="center">
+                    <img src="`+thumb+`" alt="logo" style="width:40px; height: 40px;">
+                </td>
+                <td width='45%' style = 'font-weight: bold;'>`+name+`</td>
+                <td width='40%' align="right">
+                    <div style="font-weight: bold;">`+absolutePrice+`</div>
+                    <div style="font-size:12px; color: `+color+`;">`+changePrice+`(`+changeRate+`%)</div>
+                </td>
+            </tr>
+            `
+        );
+    });
+
+</script>
 
 </html>

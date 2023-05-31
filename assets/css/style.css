@@ -51,7 +51,7 @@ body {
     background-color: #535561;
 }
 
-.Rectangle-2 span {
+.Rectangle-2>span {
     width: 52px;
     height: 17px;
     flex-grow: 0;
@@ -82,7 +82,7 @@ body {
     color: #bdbdbd;
 }
 
-.row.OrderButtonByRate span {
+.row.OrderButtonByRate>span {
     /* width: 39px; */
     height: 17px;
     flex-grow: 0;
@@ -104,10 +104,10 @@ body {
     flex-direction: column;
 }
 
-/*list*/
+/***********list*************/
 .Frame-1 {
     width: 350px;
-    height: 295px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -115,38 +115,9 @@ body {
     gap: 11px;
     margin: 27px 18px 273px 22px;
     padding: 0;
-    border: solid 1px red;
+    /* border: solid 1px red; */
 }
 
-.list {
-    width: 350px;
-    height: 40px;
-    flex-grow: 0;
-    border: dotted 1px yellow;
-    display: flex;
-}
-
-.CircleAvatar {
-    width: 32px;
-    height: 32px;
-    margin: 2px 16px 6px 0;
-    background-color: #003edc;
-}
-
-.list>span {
-    /* width: 56px; */
-    height: 18px;
-    /* margin: 9px 147px 13px 16px; */
-    font-family: Inter;
-    font-size: 15px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fff;
-}
 
 .absolutePrice {
     /* width: 66px; */
@@ -164,18 +135,6 @@ body {
     color: #fff;
 }
 
-.priceRate {
-    /* width: 99px; */
-    height: 15px;
-    flex-grow: 0;
-    margin: 7px 0 0;
-    font-family: Inter;
-    font-size: 12px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #e10000;
+.stock_list_scroll {
+    overflow: auto;
 }
