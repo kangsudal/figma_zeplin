@@ -138,3 +138,8 @@ body {
 .stock_list_scroll {
     overflow: auto;
 }
+
+/*스크롤 모양 숨기기*/
+.stock_list_scroll::-webkit-scrollbar {
+    display: none;
+}
