@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    padding-bottom: 100px;
+    padding-bottom: 75px;
 }
 
 .Rectangle-3 {
@@ -126,9 +126,9 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 11px;
-    margin: 27px 18px 0px 22px;
+    margin: 27px 18px 0px 15px;
     padding: 0;
-    border: solid 1px red;
+    /* border: solid 1px red; */
 }
 
 
@@ -157,20 +157,32 @@ body {
     display: none;
 }
 
-/*BottomNavigationBar*/
+/*안하면 오른쪽으로 간다*/
+.crumbs ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.crumb {
+    width: 70px;
+    display: inline-block;
+    color: white;
+}
+
+/* 이미지 가운데 정렬 */
+.crumb>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.crumb>div {
+    text-align: center;
+}
+
 #BottomNavigationBar{
+    
     position: fixed;
     bottom: 0;
-    left: 0;
-    right: 0;
-    
-    height: 75px;
-    width: 350px;
-    padding: 1rem;
-    color: white;
-    background: teal;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    background-color: black;
 }
